@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    margin: auto;
+    width: 600px;
+    background-color: rgb(14, 13, 13);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0%;
+    background-color: cadetblue;
+
+}
+
+main {
+    width: 600px;
+    background-color: white;
+}
