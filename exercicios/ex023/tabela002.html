@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            margin: auto;
-        }
         body {
             font-family: Arial, Helvetica, sans-serif;
+
         }
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
         }
 
         caption {
@@ -26,21 +29,26 @@
             background-color: lightgray;
         }
 
-        tbody > td:nth-child(2n) {
-            background-color: lightgray;
-        }
-
-        td, th {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
 
-        td.numero {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
             text-align: right;
         }
     </style>
@@ -173,5 +181,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero nemo rerum, dolore quasi voluptate atque eos iusto molestiae, recusandae natus totam eius sequi neque nobis similique culpa consequuntur error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo! Iusto illo asperiores aliquid dolore ducimus quaerat sequi nostrum minima nobis molestias a voluptatum, pariatur suscipit odit, hic doloribus officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste officia, sint reiciendis debitis, ullam et illum hic ipsa voluptates alias adipisci ad! Distinctio fuga officiis facere, quos aut ducimus repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolores repellat explicabo maiores voluptatum, dolor exercitationem cumque rem eum repudiandae quam praesentium nemo sint corrupti, recusandae laborum id odio facere!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero nemo rerum, dolore quasi voluptate atque eos iusto molestiae, recusandae natus totam eius sequi neque nobis similique culpa consequuntur error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo! Iusto illo asperiores aliquid dolore ducimus quaerat sequi nostrum minima nobis molestias a voluptatum, pariatur suscipit odit, hic doloribus officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste officia, sint reiciendis debitis, ullam et illum hic ipsa voluptates alias adipisci ad! Distinctio fuga officiis facere, quos aut ducimus repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolores repellat explicabo maiores voluptatum, dolor exercitationem cumque rem eum repudiandae quam praesentium nemo sint corrupti, recusandae laborum id odio facere!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero nemo rerum, dolore quasi voluptate atque eos iusto molestiae, recusandae natus totam eius sequi neque nobis similique culpa consequuntur error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo! Iusto illo asperiores aliquid dolore ducimus quaerat sequi nostrum minima nobis molestias a voluptatum, pariatur suscipit odit, hic doloribus officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste officia, sint reiciendis debitis, ullam et illum hic ipsa voluptates alias adipisci ad! Distinctio fuga officiis facere, quos aut ducimus repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolores repellat explicabo maiores voluptatum, dolor exercitationem cumque rem eum repudiandae quam praesentium nemo sint corrupti, recusandae laborum id odio facere!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero nemo rerum, dolore quasi voluptate atque eos iusto molestiae, recusandae natus totam eius sequi neque nobis similique culpa consequuntur error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo! Iusto illo asperiores aliquid dolore ducimus quaerat sequi nostrum minima nobis molestias a voluptatum, pariatur suscipit odit, hic doloribus officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste officia, sint reiciendis debitis, ullam et illum hic ipsa voluptates alias adipisci ad! Distinctio fuga officiis facere, quos aut ducimus repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolores repellat explicabo maiores voluptatum, dolor exercitationem cumque rem eum repudiandae quam praesentium nemo sint corrupti, recusandae laborum id odio facere!</p>
 </body>
 </html>
